@@ -42,7 +42,6 @@ main{
     background-color: white;
     background-image: url("./imagenes/Muñeco.png") ;
     background-repeat: no-repeat;
-    background-size:contain;
     border: none;
     color: darkblue;
     position: fixed;
@@ -111,7 +110,7 @@ main{
     position: absolute;
     cursor: pointer;
     margin-left: 5%;
-    margin-top: 402px;
+    margin-top: 475px;
 
 }
 

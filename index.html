@@ -18,22 +18,22 @@
         </header>
         <main>
             <section>
-                <textarea class="texto-encriptado" required placeholder="Ingrese texto aqui..." class="textoArea" cols="10" rows="10"></textarea>
+                <textarea class="texto-encriptado" required placeholder="Ingrese texto aqui..." class="textoArea" cols="8" rows="8"></textarea>
                 <div>
                     <h6 class="tituloMensaje">
                         Solo letras minusculas y sin acento
                     </h6>
                 </div>
                 <div class="divbotones">
-                    <input type="submit" class="botonCodificar" value="Encriptar">
-                    <input type="submit" class="botonDecodificar" value="Desencriptar">
+                    <input type="submit" class="botonCodificar" value="Encriptar" onclick="Btnencriptar()">
+                    <input type="submit" class="botonDecodificar" value="Desencriptar" onclick="BtnDesencriptar()">
                 </div>
 
             </section>
             <section>
-                <textarea class="texto-Desencriptado" cols="20" rows="10"></textarea>
+                <textarea class="texto-Desencriptado"  ></textarea>
                 <div>
-                    <input type="submit" class="botonCopiar" value="Copiar">
+                    <input type="submit" class="botonCopiar" value="Copiar" onclick="btnCopiar()">
     
                 </div>
             </section>
