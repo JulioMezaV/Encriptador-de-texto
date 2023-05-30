@@ -27,6 +27,7 @@ function BtnDesencriptar(){
     const textoEncriptado = desencriptar(textArea.value)
     mensaje.value = textoEncriptado;
     textArea.value = "";
+    mensaje.style.backgroundImage = "none";
 }
 
 function desencriptar(stringDesencriptado){
@@ -43,12 +44,12 @@ function desencriptar(stringDesencriptado){
     return stringDesencriptado;
 }
 
-function btnCopiar(stringcopia) {
-    stringcopia = mensaje.select();
-    if (stringcopia != "") {
-        navigator.clipboard.writeText(mensaje.value);
-        alert("Mensaje copiado")
+function btnCopiar() {
+    mensaje.select();
+    navigator.clipboard.writeText(mensaje.value);
+    alert("Mensaje copiado")
+    mensaje.value = "";
+    mensaje.style.backgroundImage = "url(./imagenes/Muñeco.png)";
 
-    }
-    
+
 }
