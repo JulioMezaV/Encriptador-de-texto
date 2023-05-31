@@ -41,6 +41,7 @@ main{
     resize: none;
     background-color: white;
     background-image: url("./imagenes/Muñeco.png") ;
+    background-size: contain;
     background-repeat: no-repeat;
     border: none;
     color: darkblue;
@@ -139,4 +140,19 @@ main{
 
 .botonCopiar:active{
     background-color: #5f61e7;
+}
+
+footer{
+    margin-left: 84px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    gap:5px ;
+}
+
+footer p{
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    color: darkblue;
 }
