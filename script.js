@@ -45,11 +45,14 @@ function desencriptar(stringDesencriptado){
 }
 
 function btnCopiar() {
-    mensaje.select();
-    navigator.clipboard.writeText(mensaje.value);
-    alert("Mensaje copiado")
-    mensaje.value = "";
-    mensaje.style.backgroundImage = "url(./imagenes/Muñeco.png)";
+    if(mensaje.value != ""){
+        mensaje.select();
+        navigator.clipboard.writeText(mensaje.value);
+        alert("Mensaje copiado")
+        mensaje.value = "";
+        mensaje.style.backgroundImage = "url(./imagenes/Muñeco.png)";
+    }
+    
 
 
 }
